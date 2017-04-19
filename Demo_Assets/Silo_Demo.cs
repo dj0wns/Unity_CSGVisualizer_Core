@@ -8,7 +8,7 @@ using System.Linq;
 /**
  * Simple demo of CSG operations.
  */
-public class Demo : MonoBehaviour
+public class Silo_Demo : MonoBehaviour
 {
 	GameObject composite, composite_normal,  temp;
 	bool wireframe = false;
@@ -35,7 +35,7 @@ public class Demo : MonoBehaviour
 	}
 	
 	void Silo_Test(){
-		SiloData sd = SiloReader.ReadFile("Assets/pb_CSG/Demo Assets/DATA/csg.fake");
+		SiloData sd = SiloReader.ReadFile("path of some silo interpreted file here");
 	//	SiloReader.PrintStructure(sd);
 		List<CSG_Tree> csgtree = SiloReader.GenerateTree(sd);
 		for(int i = 0; i < csgtree.Count; i++){
