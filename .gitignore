@@ -1,0 +1,5 @@
+#Exclude Meta Files
+*.meta
+*/*.meta
+*/*/*.meta
+*/*/*/*.meta
